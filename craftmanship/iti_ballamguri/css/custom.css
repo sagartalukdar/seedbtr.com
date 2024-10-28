@@ -1,0 +1,104 @@
+
+         .read{
+         color: red;
+         font-size: 15px;
+         font-weight: 600;
+         font-family: "Poppins", sans-serif;
+         }
+
+
+.read {
+	color: red;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: "Poppins", sans-serif;
+}
+
+/*gallery*/
+ .caption {
+        width:100%;
+        bottom: .1rem;
+        position: absolute;
+        
+        
+    }
+
+
+.gallery-title {
+	font-size: 36px;
+	color: #42B32F;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 70px;
+}
+
+.gallery-title:after {
+	content: "";
+	position: absolute;
+	width: 7.5%;
+	left: 46.5%;
+	height: 45px;
+	border-bottom: 1px solid #5e5e5e;
+}
+
+.filter-button {
+	text-decoration: none;
+	display: inline-block;
+	color: #000;
+	font-weight: 600;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	line-height: 1.2;
+
+
+}
+
+.filter-button:hover {
+	/*font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;*/
+
+}
+
+.btn-default:active .filter-button:active {
+	background-color: #42B32F;
+	color: white;
+}
+
+.port-image {
+	width: 100%;
+}
+
+.gallery_product {
+	margin-bottom: 30px;
+}
+
+/*gallery ends*/
+.trade-img{
+	width: 252px;
+	height: 200px;
+	border-radius: 15px;
+}
+.faculty{
+  max-width: 100px;
+  border-radius: 10px;
+}
+.scheme{
+	width: 250px;
+	height: 146px;
+}
+.tradeimg{
+	width: 250px;
+	height: 146px;
+}
+.summaryimg{
+	width: 250px;
+	height: 146px;
+}
+     

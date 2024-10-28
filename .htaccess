@@ -1,0 +1,36 @@
+# Disable directory browsing  ---- commented
+
+# Options -Indexes
+
+# Block direct access to craftmanship directory  ---- commented
+
+# RewriteEngine On
+# RewriteCond %{REQUEST_URI} ^/craftmanship/?$
+# RewriteRule ^ - [F]
+# ErrorDocument 403 /seedBTR/error.php
+
+
+
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Custom error pages
+ErrorDocument 404 /seedBTR/404.php
+ErrorDocument 403 /seedBTR/403.php
+
+# Prevent directory listing
+Options -Indexes
+
+# Deny access to all directories within the /craftmanship and /seed-admin directories
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} ^/seedBTR/(craftmanship|seed-admin)/.*
+RewriteRule ^ - [F,L]
+
+# Redirect to 404 error page if accessing non-existent files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /seedBTR/404.php [L]
+
+
+
